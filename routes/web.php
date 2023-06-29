@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TallerController;
+use App\Http\Controllers\tallerController;
 
 
 /*
@@ -20,6 +20,6 @@ Route::get('/', function () {
 }
 );
 
-Route::post('taller', [TallerController::class,'store'])->name('taller.store');
+Route::post('taller', [tallerController::class,'store'])->name('taller.store');
 
-    Route::get('taller/create',[TallerController::class,'create']);
+    Route::get('taller/create',[tallerController::class,'create']);

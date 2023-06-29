@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\trabajo;
 use Illuminate\Http\Request;
 
-class TallerController extends Controller
+class tallerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class TallerController extends Controller
      */
     public function store(Request $request)
     {
-        $taller=new ejercicio();
+        $taller=new trabajo();
         $taller->name=$request->name;
         $taller->descripcion=$request->descripcion;
         $taller->precio=$request->precio;
